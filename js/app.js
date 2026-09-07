@@ -1,3 +1,5 @@
+import ongImagem from '../img/ong.jpg';
+
 import './formulario.js';
 
 const app = document.querySelector('#app');
@@ -7,7 +9,7 @@ const rotas = {
     <section>
         <h2>Sobre a ONG</h2>
 
-        <img src="/Projeto-ong/img/ong.jpg" alt="Voluntários da ONG participando de uma ação de inclusão social">
+       <img src="${ongImagem}" alt="Voluntários da ONG participando de uma ação de inclusão social">
 
         <p>
             Nossa ONG atua na promoção da inclusão social
