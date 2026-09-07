@@ -18,9 +18,14 @@
             🌙 Modo escuro
         </button>
 
+<<<<<<< HEAD
         <nav aria-label="Navegação principal">
             <button class="menu-toggle" aria-label="Abrir menu">☰</button>
 
+=======
+        <nav>
+            <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+>>>>>>> hotfix/correcao
             <div class="menu">
                 <a href="index.html">Início</a>
 
@@ -50,8 +55,11 @@
     const menu = document.querySelector('.menu');
 
     botaoMenu.addEventListener('click', function () {
-        menu.classList.toggle('ativo');
-    });
+    menu.classList.toggle('ativo');
+
+    const menuAberto = menu.classList.contains('ativo');
+    botaoMenu.setAttribute('aria-expanded', menuAberto);
+});
 
     const botaoTema = document.querySelector('#tema-toggle');
 
