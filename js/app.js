@@ -7,7 +7,7 @@ const rotas = {
     <section>
         <h2>Sobre a ONG</h2>
 
-        <img src="../img/ong.jpg" alt="Voluntários da ONG participando de uma ação de inclusão social">
+        <img src="/Projeto-ong/img/ong.jpg" alt="Voluntários da ONG participando de uma ação de inclusão social">
 
         <p>
             Nossa ONG atua na promoção da inclusão social
