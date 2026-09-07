@@ -5,6 +5,13 @@ export default defineConfig({
     base: '/Projeto-ong/',
     build: {
         outDir: '../dist',
-        emptyOutDir: true
+        emptyOutDir: true,
+        rollupOptions: {
+            input: {
+                index: 'html/index.html',
+                projetos: 'html/projetos.html',
+                cadastro: 'html/cadastro.html'
+            }
+        }
     }
 });
