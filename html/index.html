@@ -14,9 +14,9 @@
     <header>
         <h1>ONG - Inclusão Social</h1>
 
-        <button id="tema-toggle" type="button">
-            🌙 Modo escuro
-        </button>
+       <button id="tema-toggle" type="button" aria-label="Ativar modo escuro">
+    🌙 Modo escuro
+</button>
 
         <nav aria-label="Navegação principal">
             <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
@@ -57,9 +57,19 @@
 
     const botaoTema = document.querySelector('#tema-toggle');
 
-    botaoTema.addEventListener('click', function () {
-        document.body.classList.toggle('modo-escuro');
-    });
+if (localStorage.getItem('modo-escuro') === 'ativo') {
+    document.body.classList.add('modo-escuro');
+}
+
+botaoTema.addEventListener('click', function () {
+    document.body.classList.toggle('modo-escuro');
+
+    if (document.body.classList.contains('modo-escuro')) {
+        localStorage.setItem('modo-escuro', 'ativo');
+    } else {
+        localStorage.removeItem('modo-escuro');
+    }
+});
 </script>
 
 
