@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre a ONG</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>ONG - Inclusão Social</h1>
+
+        <button id="tema-toggle" type="button">
+            🌙 Modo escuro
+        </button>
+
+        <nav>
+            <button class="menu-toggle" aria-label="Abrir menu">☰</button>
+
+            <div class="menu">
+                <a href="index.html">Início</a>
+
+                <div class="dropdown">
+                    <a href="projetos.html">Projetos ▾</a>
+
+                    <div class="submenu">
+                        <a href="projetos.html">Projetos sociais</a>
+                        <a href="projetos.html">Voluntariado</a>
+                    </div>
+                </div>
+
+                <a href="cadastro.html">Cadastro</a>
+            </div>
+        </nav>
+    </header>
+
+    <main id="app">
+    </main>
+
+    <footer>
+        <p>&copy; 2026 ONG - Inclusão Social</p>
+    </footer>
+
+    <script>
+    const botaoMenu = document.querySelector('.menu-toggle');
+    const menu = document.querySelector('.menu');
+
+    botaoMenu.addEventListener('click', function () {
+        menu.classList.toggle('ativo');
+    });
+
+    const botaoTema = document.querySelector('#tema-toggle');
+
+    botaoTema.addEventListener('click', function () {
+        document.body.classList.toggle('modo-escuro');
+    });
+</script>
+
+
+    <script type="module" src="../js/app.js"></script>
+
+</body>
+</html>
