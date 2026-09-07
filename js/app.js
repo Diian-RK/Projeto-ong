@@ -2,13 +2,12 @@ import './formulario.js';
 
 const app = document.querySelector('#app');
 
-
 const rotas = {
  '/': `
     <section>
         <h2>Sobre a ONG</h2>
 
-        <img src="../img/ong.jpg" alt="Imagem da ONG">
+        <img src="../img/ong.jpg" alt="Voluntários da ONG participando de uma ação de inclusão social">
 
         <p>
             Nossa ONG atua na promoção da inclusão social
@@ -41,7 +40,7 @@ const rotas = {
             <button type="submit">Cadastrar</button>
         </form>
 
-        <p id="mensagem"></p>
+        <p id="mensagem" aria-live="polite"></p>
     </section>
 `,
 };
